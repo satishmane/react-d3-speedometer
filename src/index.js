@@ -1,5 +1,8 @@
 // React port of - http://bl.ocks.org/msqr/3202712
 import React from "react";
+import {
+    View
+} from 'react-native';
 import PropTypes from 'prop-types';
 
 // selectively import d3 components for reducing file size
@@ -76,8 +79,8 @@ class ReactSpeedometer extends React.Component {
     
     render = () => {
         return (
-            <div ref={ref => this.gaugeDiv = ref}>
-            </div>
+            <View ref={ref => this.gaugeDiv = ref}>
+            </View>
         );
     };
 
